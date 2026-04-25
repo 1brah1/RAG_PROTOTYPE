@@ -1,0 +1,3 @@
+What are the key hardware constraints mentioned in the document?
+Summarize the performance guidance.
+What does the document say about memory limits?

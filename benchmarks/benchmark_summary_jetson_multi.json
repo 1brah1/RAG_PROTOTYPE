@@ -1,0 +1,89 @@
+{
+  "local_q4": {
+    "provider": "local",
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "queries": [
+      {
+        "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+        "ttft_mean": 3.2838505599997005,
+        "tps_mean": 5.893315121589242,
+        "peak_vram_max": 7315.0
+      },
+      {
+        "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+        "ttft_mean": 2.3318570799994633,
+        "tps_mean": 16.528720494104398,
+        "peak_vram_max": 5305.0
+      },
+      {
+        "query": "What power modes or power range are specified for Jetson Orin NX?",
+        "ttft_mean": 2.528397330000007,
+        "tps_mean": 22.410040268076592,
+        "peak_vram_max": 5305.0
+      }
+    ],
+    "overall": {
+      "ttft_mean_over_queries": 2.7147016566663904,
+      "tps_mean_over_queries": 14.944025294590077,
+      "peak_vram_max_overall": 7315.0
+    }
+  },
+  "local_q8": {
+    "provider": "local",
+    "model": "llama3.1:8b-instruct-q8_0",
+    "queries": [
+      {
+        "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+        "ttft_mean": 3.848159440002928,
+        "tps_mean": 3.4782858677728914,
+        "peak_vram_max": 7315.0
+      },
+      {
+        "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+        "ttft_mean": 2.6092333999986295,
+        "tps_mean": 6.025845001469761,
+        "peak_vram_max": 7315.0
+      },
+      {
+        "query": "What power modes or power range are specified for Jetson Orin NX?",
+        "ttft_mean": 2.604368390000309,
+        "tps_mean": 6.773073484975889,
+        "peak_vram_max": 7315.0
+      }
+    ],
+    "overall": {
+      "ttft_mean_over_queries": 3.020587076667289,
+      "tps_mean_over_queries": 5.425734784739514,
+      "peak_vram_max_overall": 7315.0
+    }
+  },
+  "nim": {
+    "provider": "nim",
+    "model": "meta/llama-3.1-8b-instruct",
+    "queries": [
+      {
+        "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+        "ttft_mean": 0.36974863999930674,
+        "tps_mean": 28.172373909106433,
+        "peak_vram_max": 7315.0
+      },
+      {
+        "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+        "ttft_mean": 0.6513551999989431,
+        "tps_mean": 35.52361518540336,
+        "peak_vram_max": 7315.0
+      },
+      {
+        "query": "What power modes or power range are specified for Jetson Orin NX?",
+        "ttft_mean": 1.2923818900002515,
+        "tps_mean": 37.296532234378326,
+        "peak_vram_max": 7315.0
+      }
+    ],
+    "overall": {
+      "ttft_mean_over_queries": 0.7711619099995004,
+      "tps_mean_over_queries": 33.66417377629604,
+      "peak_vram_max_overall": 7315.0
+    }
+  }
+}

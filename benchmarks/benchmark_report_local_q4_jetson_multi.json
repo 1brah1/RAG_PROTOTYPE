@@ -1,0 +1,1369 @@
+{
+  "provider": "local",
+  "model": "llama3.1:8b-instruct-q4_K_M",
+  "runs_per_query": 10,
+  "queries": {
+    "What is the theoretical peak memory bandwidth of Jetson Orin NX?": {
+      "summary": {
+        "ttft_seconds": {
+          "mean": 3.2838505599997005,
+          "median": 2.2752796999920974,
+          "min": 2.2490152999962447,
+          "max": 11.988400600006571,
+          "variability": "high variability"
+        },
+        "generation_seconds": {
+          "mean": 3.773869089997606,
+          "median": 2.8102810500058695,
+          "min": 2.758397799989325,
+          "max": 12.35802529999637,
+          "variability": "high variability"
+        },
+        "tokens_per_second": {
+          "mean": 5.893315121589242,
+          "median": 6.405064577732825,
+          "min": 1.4565433848080314,
+          "max": 6.525527246312936,
+          "variability": "high variability"
+        },
+        "peak_vram_mb": {
+          "mean": 5506.0,
+          "median": 5305.0,
+          "min": 5305.0,
+          "max": 7315.0,
+          "variability": "moderate variability"
+        }
+      },
+      "runs": [
+        {
+          "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+          "answer": "The theoretical peak memory bandwidth of Jetson Orin NX is 102 GB/s.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=15, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 15,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.11487309999938589,
+          "generation_seconds": 12.35802529999637,
+          "ttft_seconds": 11.988400600006571,
+          "output_tokens": 18,
+          "tokens_per_second": 1.4565433848080314,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:22:28Z",
+            "memory_used_mb": 7315.0,
+            "utilization_gpu_percent": 0.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:22:41Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 87.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+          "answer": "The theoretical peak memory bandwidth of Jetson Orin NX is 102 GB/s.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=15, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 15,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.030882899998687208,
+          "generation_seconds": 2.801181999995606,
+          "ttft_seconds": 2.3930710999993607,
+          "output_tokens": 18,
+          "tokens_per_second": 6.425858798188848,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:22:41Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 87.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:22:44Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+          "answer": "The theoretical peak memory bandwidth of Jetson Orin NX is 102 GB/s.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=15, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 15,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.02665529999649152,
+          "generation_seconds": 2.9964924000087194,
+          "ttft_seconds": 2.48760810001113,
+          "output_tokens": 18,
+          "tokens_per_second": 6.007023411755565,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:22:44Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 94.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:22:47Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 87.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+          "answer": "The theoretical peak memory bandwidth of Jetson Orin NX is 102 GB/s.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=15, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 15,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.024242499988758937,
+          "generation_seconds": 2.7671665999951074,
+          "ttft_seconds": 2.404282699993928,
+          "output_tokens": 18,
+          "tokens_per_second": 6.504848678078083,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:22:47Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 87.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:22:50Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+          "answer": "The theoretical peak memory bandwidth of Jetson Orin NX is 102 GB/s.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=15, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 15,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.016830599997774698,
+          "generation_seconds": 2.8416185999958543,
+          "ttft_seconds": 2.290067199995974,
+          "output_tokens": 18,
+          "tokens_per_second": 6.334417996850901,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:22:50Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:22:53Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+          "answer": "The theoretical peak memory bandwidth of Jetson Orin NX is 102 GB/s.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=15, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 15,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.0144198000052711,
+          "generation_seconds": 2.758397799989325,
+          "ttft_seconds": 2.2490152999962447,
+          "output_tokens": 18,
+          "tokens_per_second": 6.525527246312936,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:22:53Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:22:56Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+          "answer": "The theoretical peak memory bandwidth of Jetson Orin NX is 102 GB/s.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=15, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 15,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.016389899989007972,
+          "generation_seconds": 2.7764679999963846,
+          "ttft_seconds": 2.2578407999972114,
+          "output_tokens": 18,
+          "tokens_per_second": 6.483056890993679,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:22:56Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:22:59Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+          "answer": "The theoretical peak memory bandwidth of Jetson Orin NX is 102 GB/s.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=15, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 15,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.01527160000114236,
+          "generation_seconds": 2.8065571000042837,
+          "ttft_seconds": 2.250824000002467,
+          "output_tokens": 18,
+          "tokens_per_second": 6.413552034972859,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:22:59Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:02Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 98.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+          "answer": "The theoretical peak memory bandwidth of Jetson Orin NX is 102 GB/s.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=15, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 15,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.015314000003854744,
+          "generation_seconds": 2.8187780999869574,
+          "ttft_seconds": 2.260492199988221,
+          "output_tokens": 18,
+          "tokens_per_second": 6.385745653438732,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:02Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:05Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What is the theoretical peak memory bandwidth of Jetson Orin NX?",
+          "answer": "The theoretical peak memory bandwidth of Jetson Orin NX is 102 GB/s.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=15, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 15,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p15-c1-e5a5feec86e034d6"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.016786099993623793,
+          "generation_seconds": 2.8140050000074552,
+          "ttft_seconds": 2.2569036000058986,
+          "output_tokens": 18,
+          "tokens_per_second": 6.39657712049279,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:05Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 63.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:08Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          }
+        }
+      ]
+    },
+    "What CPU architecture and core count are listed for Jetson Orin NX?": {
+      "summary": {
+        "ttft_seconds": {
+          "mean": 2.3318570799994633,
+          "median": 2.265486250005779,
+          "min": 2.2558507999929134,
+          "max": 2.947436000002199,
+          "variability": "stable"
+        },
+        "generation_seconds": {
+          "mean": 3.8093176999973366,
+          "median": 3.7379523500057985,
+          "min": 3.6916118999943137,
+          "max": 4.263500100001693,
+          "variability": "stable"
+        },
+        "tokens_per_second": {
+          "mean": 16.528720494104398,
+          "median": 16.586621405659677,
+          "min": 14.542042581393485,
+          "max": 18.425389904641143,
+          "variability": "stable"
+        },
+        "peak_vram_mb": {
+          "mean": 5305.0,
+          "median": 5305.0,
+          "min": 5305.0,
+          "max": 5305.0,
+          "variability": "stable"
+        }
+      },
+      "runs": [
+        {
+          "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+          "answer": "The CPU architecture for Jetson Orin NX is Arm Cortex A78AE v8.2 (64-bit) heterogeneous multi-processing (HMP).\n\nFor the core count:\n\n* The ONX 16GB has 8x cores.\n* The ONX 8GB has 6x cores.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.019173699998646043,
+          "generation_seconds": 4.263500100001693,
+          "ttft_seconds": 2.947436000002199,
+          "output_tokens": 62,
+          "tokens_per_second": 14.542042581393485,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:08Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:12Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 92.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+          "answer": "The CPU architecture for Jetson Orin NX is Arm Cortex A78AE v8.2 (64-bit) heterogeneous multi-processing (HMP).\n\nFor the core count:\n\n* The ONX 16GB has 8x cores.\n* The ONX 8GB has 6x cores.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.01586279999173712,
+          "generation_seconds": 3.7011555999924894,
+          "ttft_seconds": 2.2671600000030594,
+          "output_tokens": 62,
+          "tokens_per_second": 16.75152484811117,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:12Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 92.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:16Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+          "answer": "The CPU architecture for Jetson Orin NX is Arm Cortex A78AE v8.2 (64-bit) heterogeneous multi-processing (HMP).\n\nFor the core count:\n\n* The ONX 16GB has 8x cores.\n* The ONX 8GB has 6x cores.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.02111049999075476,
+          "generation_seconds": 3.73762970000098,
+          "ttft_seconds": 2.257655800000066,
+          "output_tokens": 62,
+          "tokens_per_second": 16.588053118259346,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:16Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:20Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+          "answer": "The CPU architecture for Jetson Orin NX is Arm Cortex A78AE v8.2 (64-bit) heterogeneous multi-processing (HMP).\n\nFor the core count:\n\n* The ONX 16GB has 8x cores.\n* The ONX 8GB has 6x cores.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.016574599998421036,
+          "generation_seconds": 3.708864000000176,
+          "ttft_seconds": 2.267417300012312,
+          "output_tokens": 62,
+          "tokens_per_second": 16.71670894376204,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:20Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:24Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+          "answer": "The CPU architecture for Jetson Orin NX is Arm Cortex-A78AE v8.2 (64-bit) heterogeneous multi-processing (HMP).\n\nFor the core count:\n\n* The ONX 16GB has 8x cores.\n* The ONX 8GB has 6x cores.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.013975100009702146,
+          "generation_seconds": 3.7366360999876633,
+          "ttft_seconds": 2.272503799991682,
+          "output_tokens": 62,
+          "tokens_per_second": 16.59246400798962,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:24Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:28Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+          "answer": "The CPU architecture for Jetson Orin NX is Arm Cortex-A78AE v8.2 (64-bit) heterogeneous multi-processing (HMP).\n\nFor the core count:\n\n* ONX 16GB has 8x cores.\n* ONX 8GB has 6x cores.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.015637999997125007,
+          "generation_seconds": 3.6916118999943137,
+          "ttft_seconds": 2.2558507999929134,
+          "output_tokens": 60,
+          "tokens_per_second": 16.25306278812581,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:28Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:32Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 97.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+          "answer": "The CPU architecture for Jetson Orin NX is Arm Cortex A78AE v8.2 (64-bit) heterogeneous multi-processing (HMP).\n\nFor the core count:\n\n* The ONX 16GB has 8x cores.\n* The ONX 8GB has 6x cores.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.01297080000222195,
+          "generation_seconds": 3.7599041999928886,
+          "ttft_seconds": 2.25659619999351,
+          "output_tokens": 62,
+          "tokens_per_second": 16.489781840749362,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:32Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 97.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:35Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+          "answer": "The CPU architecture for Jetson Orin NX is Arm Cortex A78AE v8.2 (64-bit) heterogeneous multi-processing (HMP).\n\nFor the core count:\n\n* The ONX 16GB has 8x cores.\n* The ONX 8GB has 6x cores.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.014730000009876676,
+          "generation_seconds": 3.7936761000019033,
+          "ttft_seconds": 2.2567838999966625,
+          "output_tokens": 62,
+          "tokens_per_second": 16.342987214951982,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:36Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:39Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+          "answer": "The CPU architecture for Jetson Orin NX is Arm Cortex A78AE v8.2 (64-bit) heterogeneous multi-processing (HMP).\n\nFor the core count:\n\n* Jetson Orin NX (ONX) 16GB: 8x cores\n* Jetson Orin NX (ONX) 8GB: 6x cores\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.015731300009065308,
+          "generation_seconds": 3.961924299990642,
+          "ttft_seconds": 2.2733544999937294,
+          "output_tokens": 73,
+          "tokens_per_second": 18.425389904641143,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:40Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 80.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:44Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What CPU architecture and core count are listed for Jetson Orin NX?",
+          "answer": "The CPU architecture for Jetson Orin NX is Arm Cortex A78AE v8.2 (64-bit) heterogeneous multi-processing (HMP).\n\nFor the core count:\n\n* The ONX 16GB has 8x cores.\n* The ONX 8GB has 6x cores.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=8, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=7, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 8,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p8-c0-cf5695ea0a8c0bab"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c0-7535a6e85fcd6119"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 7,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p7-c1-f681b9717b00cd6a"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.015352900009020232,
+          "generation_seconds": 3.738275000010617,
+          "ttft_seconds": 2.2638125000084983,
+          "output_tokens": 62,
+          "tokens_per_second": 16.585189693060013,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:44Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:47Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          }
+        }
+      ]
+    },
+    "What power modes or power range are specified for Jetson Orin NX?": {
+      "summary": {
+        "ttft_seconds": {
+          "mean": 2.528397330000007,
+          "median": 2.4893581999931484,
+          "min": 2.4058568000036757,
+          "max": 2.9157477999979164,
+          "variability": "stable"
+        },
+        "generation_seconds": {
+          "mean": 5.263584409999021,
+          "median": 4.8949288000003435,
+          "min": 4.719584999998915,
+          "max": 6.516011500003515,
+          "variability": "moderate variability"
+        },
+        "tokens_per_second": {
+          "mean": 22.410040268076592,
+          "median": 22.105015554054592,
+          "min": 18.285425273945222,
+          "max": 27.931196867884875,
+          "variability": "moderate variability"
+        },
+        "peak_vram_mb": {
+          "mean": 5305.0,
+          "median": 5305.0,
+          "min": 5305.0,
+          "max": 5305.0,
+          "variability": "stable"
+        }
+      },
+      "runs": [
+        {
+          "query": "What power modes or power range are specified for Jetson Orin NX?",
+          "answer": "According to page 42 of the datasheet [3], the Jetson Orin NX module has two power states: ON and OFF.\n\nThe ON state is entered when a low-to-high transition occurs on the POWER_EN pin, with VDD_IN connected to a power rail and asserted high. The required voltage level for VDD_IN is 8.0V for MAXN_SUPER at 40W.\n\nThe OFF state can only be entered from the ON state through an OFF event, which includes:\n\n* HW Shutdown: Set POWER_EN pin to zero for at least 10 \u00b5s\n* SW Shutdown: SoC power-down sequence initiated by software\n\nThere is no explicit mention of specific power modes or ranges in the provided context.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=39, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=40, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=42, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 39,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 40,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 42,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.021232300001429394,
+          "generation_seconds": 6.0967645999917295,
+          "ttft_seconds": 2.9157477999979164,
+          "output_tokens": 149,
+          "tokens_per_second": 24.439191895354156,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:48Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:54Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What power modes or power range are specified for Jetson Orin NX?",
+          "answer": "According to the provided context, the power modes or power range specified for Jetson Orin NX are:\n\n* MAXN_SUPER at 40W requires minimum 8.0V to the VDD_IN.\n* Input voltage range: 5V to 20V for VDD_IN.\n\nAdditionally, the OFF state can be entered through an OFF event, which includes HW Shutdown (POWER_EN pin set to zero for at least 10 \u00b5s) and SW Shutdown ( POWER_EN pin set to zero).\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=39, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=40, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=42, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 39,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 40,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 42,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.023344600005657412,
+          "generation_seconds": 4.822943799998029,
+          "ttft_seconds": 2.4177111000026343,
+          "output_tokens": 103,
+          "tokens_per_second": 21.356251341772236,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:54Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 88.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:23:59Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What power modes or power range are specified for Jetson Orin NX?",
+          "answer": "According to the provided context, the power modes or power range specified for Jetson Orin NX are:\n\n* MAXN_SUPER at 40W requires minimum 8.0V to the VDD_IN.\n* Input voltage range: 5V to 20V for VDD_IN.\n\nAdditionally, the OFF state can be entered through an OFF event, which includes HW Shutdown (POWER_EN pin set to zero for at least 10 \u00b5s) and SW Shutdown ( POWER_EN pin set to zero).\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=39, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=40, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=42, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 39,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 40,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 42,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.02547329998924397,
+          "generation_seconds": 4.825762400010717,
+          "ttft_seconds": 2.432242299997597,
+          "output_tokens": 103,
+          "tokens_per_second": 21.343777720960993,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:23:59Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:24:04Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What power modes or power range are specified for Jetson Orin NX?",
+          "answer": "According to the provided context, the power modes or power range specified for Jetson Orin NX are:\n\n* MAXN_SUPER at 40W requires minimum 8.0V to the VDD_IN.\n* The input voltage range for VDD_IN is 5V to 20V.\n\nAdditionally, the OFF state can be entered from the ON state through an OFF event, which includes HW Shutdown and SW Shutdown events.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=39, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=40, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=42, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 39,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 40,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 42,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.023757999995723367,
+          "generation_seconds": 4.757887699990533,
+          "ttft_seconds": 2.605896599998232,
+          "output_tokens": 87,
+          "tokens_per_second": 18.285425273945222,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:24:04Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:24:09Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What power modes or power range are specified for Jetson Orin NX?",
+          "answer": "The power modes or power range specified for Jetson Orin NX are:\n\n* MAXN_SUPER at 40W requires minimum 8.0V to the VDD_IN.\n* Input voltage: 5V to 20V\n* The PMC enables both high speed operation and very low-power standby states.\n\nAdditionally, the OFF state can be entered from the ON state through an OFF event, which includes:\n\n* HW Shutdown: Set POWER_EN pin to zero for at least 10 \u00b5s.\n* SW Shutdown: SoC is put into a low power mode.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=39, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=40, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=42, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 39,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 40,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 42,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.027980699989711866,
+          "generation_seconds": 5.095824499992887,
+          "ttft_seconds": 2.41327600000659,
+          "output_tokens": 116,
+          "tokens_per_second": 22.763735289581092,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:24:09Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:24:14Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 93.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What power modes or power range are specified for Jetson Orin NX?",
+          "answer": "The power modes or power range specified for Jetson Orin NX are:\n\n* MAXN_SUPER at 40W requires minimum 8.0V to the VDD_IN.\n* Input voltage range: 5V to 20V for VDD_IN.\n\nAdditionally, there is a description of different power states and events, including ON and OFF states, but no specific power modes or ranges are specified beyond the above-mentioned input voltage range and minimum voltage requirement.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=39, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=40, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=42, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 39,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 40,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 42,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.021172099994146265,
+          "generation_seconds": 4.876089400000637,
+          "ttft_seconds": 2.5701075999968452,
+          "output_tokens": 95,
+          "tokens_per_second": 19.482825725054916,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:24:14Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 93.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:24:19Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What power modes or power range are specified for Jetson Orin NX?",
+          "answer": "According to page 42 of the document, the Jetson Orin NX module has two power states: ON and OFF.\n\nThe ON state is entered when a low-to-high transition occurs on the POWER_EN pin, with VDD_IN connected to a power rail and asserted high. The required voltage level for VDD_IN is at least 8.0V (as mentioned in page 39).\n\nThe OFF state can only be entered from the ON state through an OFF event, which includes:\n\n* HW Shutdown: Set POWER_EN pin to zero for at least 10 \u00b5s\n* SW Shutdown: SoC and peripherals are powered down\n\nThere is no specific power mode or range specified for Jetson Orin NX in terms of a numerical value (e.g., mW, W). However, the module requires a minimum VDD_IN voltage level of 8.0V to operate normally.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=39, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=40, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=42, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 39,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 40,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 42,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.02260769999702461,
+          "generation_seconds": 6.516011500003515,
+          "ttft_seconds": 2.4058568000036757,
+          "output_tokens": 182,
+          "tokens_per_second": 27.931196867884875,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:24:19Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:24:26Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What power modes or power range are specified for Jetson Orin NX?",
+          "answer": "The power modes or power range specified for Jetson Orin NX are:\n\n* MAXN_SUPER at 40W requires minimum 8.0V to the VDD_IN.\n* Input voltage range: 5V to 20V\n* The PMC enables both high speed operation and very low-power standby states.\n\nThere is no specific information about different power modes or ranges, but it seems that the module can operate within a wide input voltage range (5V to 20V) and has a maximum power consumption of 40W.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=39, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=40, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=42, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 39,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 40,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 42,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.023552099999506027,
+          "generation_seconds": 4.9137682000000495,
+          "ttft_seconds": 2.4136266999994405,
+          "output_tokens": 110,
+          "tokens_per_second": 22.38607836649659,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:24:26Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 40.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:24:31Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What power modes or power range are specified for Jetson Orin NX?",
+          "answer": "According to the provided context, the power modes or power range specified for Jetson Orin NX are:\n\n* MAXN_SUPER at 40W requires minimum 8.0V to the VDD_IN.\n* Input voltage range: 5V to 20V for VDD_IN.\n\nAdditionally, the OFF state can be entered through an OFF event, which includes HW Shutdown (POWER_EN pin set to zero for at least 10 \u00b5s) and SW Shutdown ( POWER_EN pin set to zero).\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=39, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=40, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=42, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 39,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 40,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 42,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.02329240000108257,
+          "generation_seconds": 4.719584999998915,
+          "ttft_seconds": 2.5464740999887,
+          "output_tokens": 103,
+          "tokens_per_second": 21.823952741612594,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:24:31Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 95.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:24:35Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          }
+        },
+        {
+          "query": "What power modes or power range are specified for Jetson Orin NX?",
+          "answer": "The power modes or power range specified for Jetson Orin NX are:\n\n* MAXN_SUPER at 40W requires minimum 8.0V to the VDD_IN.\n* The VDD_IN input voltage range is 5V to 20V.\n\nThere is no specific information about low-power standby states, but it is mentioned that the PMC power management features enable both high-speed operation and very low-power standby states.\n\nThe power modes or states specified are:\n\n* ON state: POWER_EN pin asserted (at a logic1) with VDD_IN connected to a power rail.\n* OFF state: POWER_EN pin set to zero for at least 10 \u00b5s, the internal PMIC starts the shutdown sequence.\n\nSources:\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=39, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=40, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1\n- filename=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf, page=42, chunk_id=Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb",
+          "sources": [
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 39,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p39-c0-84cea77ef20836f0"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 40,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p40-c1-4a78ada5110cc7b1"
+            },
+            {
+              "filename": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7.pdf",
+              "page": 42,
+              "chunk_id": "Jetson-Orin-NX-Series-Modules-Datasheet_DS-10712-001_v1.7-p42-c1-f5c53a9ade3ff3bb"
+            }
+          ],
+          "provider": "local",
+          "model": "llama3.1:8b-instruct-q4_K_M",
+          "retrieval_seconds": 0.02464779998990707,
+          "generation_seconds": 6.011207000003196,
+          "ttft_seconds": 2.5630343000084395,
+          "output_tokens": 146,
+          "tokens_per_second": 24.287967458103235,
+          "telemetry_pre": {
+            "timestamp_utc": "2026-04-25T04:24:36Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 96.0,
+            "available": true,
+            "note": ""
+          },
+          "telemetry_post": {
+            "timestamp_utc": "2026-04-25T04:24:42Z",
+            "memory_used_mb": 5305.0,
+            "utilization_gpu_percent": 94.0,
+            "available": true,
+            "note": ""
+          }
+        }
+      ]
+    }
+  }
+}

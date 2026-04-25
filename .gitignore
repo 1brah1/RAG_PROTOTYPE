@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Data artifacts
+/data/chroma/
+/benchmarks/*.json
+
+# Editors / OS
+.vscode/
+.DS_Store
+Thumbs.db
