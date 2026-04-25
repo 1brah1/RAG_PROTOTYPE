@@ -76,6 +76,9 @@ class RAGOrchestrator:
                 ttft_seconds=0.0,
                 output_tokens=0,
                 tokens_per_second=0.0,
+                faithfulness_score=1.0,
+                faithfulness_supported_claims=0,
+                faithfulness_total_claims=0,
                 telemetry_pre=None,
                 telemetry_post=None,
             )
@@ -104,6 +107,15 @@ class RAGOrchestrator:
             else 0.0
         )
 
+        from edge_rag.evaluate import evaluate_faithfulness
+        context_str = _build_context(chunks)
+        score, supported, total = evaluate_faithfulness(
+            self.inference_client, 
+            query, 
+            answer_body, 
+            context_str
+        )
+
         return RAGResult(
             query=query,
             answer=answer,
@@ -115,6 +127,9 @@ class RAGOrchestrator:
             ttft_seconds=generation.ttft_seconds,
             output_tokens=generation.output_tokens,
             tokens_per_second=tps,
+            faithfulness_score=score,
+            faithfulness_supported_claims=supported,
+            faithfulness_total_claims=total,
             telemetry_pre=telemetry.pre,
             telemetry_post=telemetry.post,
         )

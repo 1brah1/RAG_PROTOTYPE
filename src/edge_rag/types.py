@@ -43,5 +43,8 @@ class RAGResult:
     ttft_seconds: float
     output_tokens: int
     tokens_per_second: float
+    faithfulness_score: float
+    faithfulness_supported_claims: int
+    faithfulness_total_claims: int
     telemetry_pre: GPUSnapshot | None
     telemetry_post: GPUSnapshot | None

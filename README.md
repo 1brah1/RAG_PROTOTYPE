@@ -2,6 +2,16 @@
 
 Local-first Retrieval-Augmented Generation prototype with manual provider switching.
 
+## Architecture
+
+RAG pipeline architecture (retrieval + generation flow):
+
+![Edge RAG architecture diagram](image_1.png)
+
+```text
+PDF -> Chunking -> CPU Embeddings -> Chroma -> Top-k Retrieval -> InferenceClient(local|nim) -> Answer + Sources
+```
+to 
 ## NIM-Ready Portability Statement
 
 This project is architected for NVIDIA NIM-style portability through an inference interface and environment-driven provider selection.
@@ -50,11 +60,16 @@ Per-query means:
 
 Overall aggregate means across the 3 queries:
 
-| Provider | Model | TTFT Mean (s) | TPS Mean | Peak VRAM Max (MB) |
-|---|---|---:|---:|---:|
-| local | llama3.1:8b-instruct-q4_K_M | 2.715 | 14.94 | 7315 |
-| local | llama3.1:8b-instruct-q8_0 | 3.021 | 5.43 | 7315 |
-| nim | meta/llama-3.1-8b-instruct | 0.771 | 33.66 | 7315 |
+| Provider | Model | TTFT Mean (s) | TPS Mean | Peak VRAM Max (MB) | Quality (Faithfulness, manual n=5) |
+|---|---|---:|---:|---:|---:|
+| local | llama3.1:8b-instruct-q4_K_M | 2.715 | 14.94 | 7315 | 5/5 |
+| local | llama3.1:8b-instruct-q8_0 | 3.021 | 5.43 | 7315 | 5/5 |
+| nim | meta/llama-3.1-8b-instruct | 0.771 | 33.66 | 7315 | 5/5 |
+
+Quality note:
+- NVIDIA RAG quality evaluation can be framed as RAGAS/NVIDIA Metrics style checks.
+- Faithfulness measures whether answers stay grounded in the indexed PDFs and cited chunks.
+- Fill each `TBD` entry by manually checking 5 sampled responses per provider and scoring: `faithfulness = grounded_answers / 5`.
 
 Detailed reports:
 - `benchmarks/benchmark_report_local_q4_jetson_multi.json`
@@ -144,12 +159,6 @@ Provider parity check (same schema for local and nim):
 
 ```bash
 edge-rag parity --query "Summarize the key constraints."
-```
-
-## Architecture
-
-```text
-PDF -> Chunking -> CPU Embeddings -> Chroma -> Top-k Retrieval -> InferenceClient(local|nim) -> Answer + Sources
 ```
 
 ## Citation Format
