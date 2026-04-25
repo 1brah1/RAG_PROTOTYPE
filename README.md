@@ -11,7 +11,7 @@ RAG pipeline architecture (retrieval + generation flow):
 ```text
 PDF -> Chunking -> CPU Embeddings -> Chroma -> Top-k Retrieval -> InferenceClient(local|nim) -> Answer + Sources
 ```
-to 
+
 ## NIM-Ready Portability Statement
 
 This project is architected for NVIDIA NIM-style portability through an inference interface and environment-driven provider selection.
