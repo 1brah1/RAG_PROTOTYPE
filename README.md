@@ -161,8 +161,3 @@ Provider parity check (same schema for local and nim):
 edge-rag parity --query "Summarize the key constraints."
 ```
 
-## Citation Format
-
-Each answer includes a `Sources` section in this format:
-- `filename=<name>, page=<n>, chunk_id=<id>`
-
